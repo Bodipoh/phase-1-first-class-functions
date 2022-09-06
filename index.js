@@ -1,13 +1,15 @@
-
-
-function receivesAFunction(spy){
-    return spy;
+function receivesAFunction(callback){
+    return callback();
+}
+function returnsANamedFunction(){
+    return function namedFunction(something){
+        return something;
+    }
 }
 
-var returnsANamedFunction 
-    return namedFunction("")
-
-
-    function returnsAnAnonymousFunction(){
-        return();
+function returnsAnAnonymousFunction(){
+    return function(something){
+        return something;
     }
+
+}
